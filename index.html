@@ -8,40 +8,45 @@
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
-<body class="bg-lightGrayishCyan text-gray-950 font-space font-bold h-screen">
-    <main class="bg-slate-500">
-        <section class="">
-            <label for="" class="">Bill</label>
-            <input type="text" id="" class="" placeholder="$">
+<body class="grid bg-lightGrayishCyan text-gray-950 font-space font-bold h-screen">
+    <header class="justify-self-center self-center mt-12 mb-10">
+        <img src="assets/img/logo.svg" alt="Tip Calculator APP logo">
+    </header>
 
-            <div class="">
-                <h2 class="">Select Tip %</h2>
-                <button class="">5%</button>
-                <button class="">10%</button>
-                <button class="">15%</button>
-                <button class="">25%</button>
-                <button class="">50%</button>
-                <button class="">Custom</button>
+    <main class="bg-white px-6 rounded-t-3xl">
+        <section class="flex flex-col pt-9">
+            <label for="" class="text-base text-darkGrayishCyan mb-3">Bill</label>
+            <input type="text" id="" class="outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan rounded-lg text-right placeholder:text-right h-12 px-4 mb-10" placeholder="142.55">
+
+            <h2 class="text-base text-darkGrayishCyan mb-4">Select Tip %</h2>
+
+            <div class="grid gap-4 grid-cols-2 md:grid-cols-3 mb-10">
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">5%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">10%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">15%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">25%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">50%</button>
+                <button class="bg-veryLightGrayishCyan hover:bg-strongCyan text-2xl text-darkGrayishCyan rounded hover:text-veryDarkCyan h-12 w-full">Custom</button>
             </div>
 
-            <label for="" class="">Number of People</label>
-            <input type="text" id="" class="" placeholder="5">
+            <label for="" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
+            <input type="text" id="" class="outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan rounded-lg text-right placeholder:text-right h-12 px-4 mb-10" placeholder="5">
         </section>
 
         <section class="">
             <div class="">
-                <h2 class="">Tip amount</h2>
-                <p class="">/ person</p>
-                <h3 class="">$4.27</h3>
+                <h2 class="text-base">Tip amount</h2>
+                <p class="text-sm">/ person</p>
+                <h3 class="text-32">$4.27</h3>
             </div>
 
             <div class="">
-                <h2 class="">Total</h2>
-                <p class="">/ person</p>
-                <h3 class="">$32.79</h3>
+                <h2 class="text-base">Total</h2>
+                <p class="text-sm">/ person</p>
+                <h3 class="text-32">$32.79</h3>
             </div>
 
-            <button class="">Reset</button>
+            <button class="text-xl">Reset</button>
         </section>
     </main>
 
