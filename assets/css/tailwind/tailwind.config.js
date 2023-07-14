@@ -27,6 +27,12 @@ module.exports = {
           lineHeight: '2.5rem'
         }],
       },
+      padding: {
+        '60lg': '3.75rem',
+      },
+      margin: {
+        '46': '2.875rem',
+      }
     },
   },
   plugins: [],
