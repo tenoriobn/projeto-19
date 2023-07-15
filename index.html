@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
-<body class="grid bg-lightGrayishCyan text-gray-950 font-space font-bold h-full">
+<body class="grid bg-lightGrayishCyan text-gray-950 font-space font-bold h-full w-full">
     <header class="justify-self-center self-center mt-12 mb-10">
         <img src="assets/img/logo.svg" alt="Tip Calculator APP logo">
     </header>
@@ -33,20 +33,20 @@
             <input type="text" id="" class="outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan rounded-lg text-right placeholder:text-right h-12 px-4 mb-10 lg:mb-4" placeholder="5">
         </section>
 
-        <section class="lg:grid lg:grid-rows-3 bg-veryDarkCyan rounded-2xl px-6 pb-6 pt-11 lg:px-10 lg:pt-60lg lg:pb-10">
-            <div class="grid grid-cols-2 grid-rows-2 mb-8 lg:mb-14">
-                <h2 class="col-start-1 col-end-2 row-start-1 text-base text-white">Tip amount</h2>
-                <p class="col-start-1 col-end-2 row-start-2 text-sm text-darkGrayishCyan">/ person</p>
-                <h3 class="col-start-2 col-end-3 row-start-1 row-end-3 justify-self-end self-center text-32 lg:text-5xl text-strongCyan">$4.27</h3>
+        <section class="lg:grid lg:grid-rows-auto1 bg-veryDarkCyan rounded-2xl px-6 pb-6 pt-11 lg:px-10 lg:pt-60lg lg:pb-10">
+            <div class="grid grid-cols-2 items-center mb-8 lg:mb-14">
+                <h2 class="col-start-1 text-base text-white">Tip amount</h2>
+                <p class="col-start-1  text-sm text-darkGrayishCyan">/ person</p>
+                <h3 class="col-start-2 row-start-1 row-end-3 justify-self-end text-32 lg:text-5xl text-strongCyan">$4.27</h3>
             </div>
 
-            <div class="grid grid-cols-2 grid-rows-2 mb-8 lg:mb-14">
-                <h2 class="col-start-1 col-end-2 row-start-1 text-base text-white">Total</h2>
-                <p class="col-start-1 col-end-2 row-start-2 text-sm text-darkGrayishCyan">/ person</p>
-                <h3 class="col-start-2 col-end-3 row-start-1 row-end-3 justify-self-end self-center text-32 lg:text-5xl text-strongCyan">$32.79</h3>
+            <div class="grid grid-cols-2 items-center mb-8 lg:mb-0">
+                <h2 class="col-start-1  text-base text-white">Total</h2>
+                <p class="col-start-1  text-sm text-darkGrayishCyan">/ person</p>
+                <h3 class="col-start-2 row-start-1 row-end-3 justify-self-end text-32 lg:text-5xl text-strongCyan">$32.79</h3>
             </div>
 
-            <button class="bg-strongCyan hover:bg-lightGrayishCyan text-xl text-veryDarkCyan uppercase rounded h-12 w-full justify-self-end self-end">Reset</button>
+            <button class="bg-strongCyan hover:bg-veryLightStrongCyan text-xl text-veryDarkCyan uppercase rounded h-12 w-full justify-self-end self-end">Reset</button>
         </section>
     </main>
 
@@ -59,9 +59,9 @@
 </html>
 
 <!-- 
-    - Alinhar `Tip mount e /person` com o valor
-    - Botar Hover no botão `reset`
+    - Botar Hover no botão `reset`***
+    - Alinhar `Tip mount e /person` com o valor**
     - Conferir largura do Botão e dos inputs
-    
+    - Centralizar Projeto
 
 -->

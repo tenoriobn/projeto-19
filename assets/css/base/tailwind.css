@@ -522,94 +522,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
-}
-
-.start-5 {
-  inset-inline-start: 1.25rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.bottom-2\/3 {
-  bottom: 66.666667%;
-}
-
-.bottom-1\/3 {
-  bottom: 33.333333%;
-}
-
-.top-1\/3 {
-  top: 33.333333%;
-}
-
-.top-2\/3 {
-  top: 66.666667%;
-}
-
-.bottom-7 {
-  bottom: 1.75rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-14 {
-  top: 3.5rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -638,18 +550,6 @@ video {
   grid-row-end: 3;
 }
 
-.row-end-2 {
-  grid-row-end: 2;
-}
-
-.row-end-1 {
-  grid-row-end: 1;
-}
-
-.m-auto {
-  margin: auto;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -670,16 +570,8 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-9 {
-  margin-bottom: 2.25rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
-}
-
-.box-border {
-  box-sizing: border-box;
 }
 
 .flex {
@@ -698,22 +590,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-1\/3 {
-  height: 33.333333%;
-}
-
-.h-1\/4 {
-  height: 25%;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -722,28 +598,12 @@ video {
   max-width: 476px;
 }
 
-.auto-rows-auto {
-  grid-auto-rows: auto;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -754,12 +614,12 @@ video {
   align-items: center;
 }
 
-.gap-4 {
-  gap: 1rem;
+.justify-center {
+  justify-content: center;
 }
 
-.self-start {
-  align-self: flex-start;
+.gap-4 {
+  gap: 1rem;
 }
 
 .self-end {
@@ -952,29 +812,9 @@ video {
   background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
 }
 
-.hover\:bg-darkGrayishCyan:hover {
+.hover\:bg-veryLightStrongCyan:hover {
   --tw-bg-opacity: 1;
-  background-color: hsl(186 14% 43% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-veryDarkCyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(183 100% 15% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-grayishCyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(184 14% 56% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-lightGrayishCyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(185 41% 84% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-veryLightGrayishCyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(189 41% 97% / var(--tw-bg-opacity));
+  background-color: hsl(173 61% 77% / var(--tw-bg-opacity));
 }
 
 .hover\:text-veryDarkCyan:hover {
@@ -1002,20 +842,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:row-start-1 {
-    grid-row-start: 1;
-  }
-
-  .lg\:row-start-2 {
-    grid-row-start: 2;
-  }
-
-  .lg\:row-end-2 {
-    grid-row-end: 2;
-  }
-
-  .lg\:row-end-3 {
-    grid-row-end: 3;
+  .lg\:mb-14 {
+    margin-bottom: 3.5rem;
   }
 
   .lg\:mb-4 {
@@ -1026,12 +854,8 @@ video {
     margin-bottom: 2.875rem;
   }
 
-  .lg\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
-  .lg\:mb-9 {
-    margin-bottom: 2.25rem;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:grid {
@@ -1042,16 +866,16 @@ video {
     max-width: 920px;
   }
 
-  .lg\:auto-rows-auto {
-    grid-auto-rows: auto;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-auto1 {
+    grid-template-rows: repeat(2, auto) 1fr;
   }
 
   .lg\:gap-x-12 {
@@ -1067,10 +891,6 @@ video {
   .lg\:gap-x-3\.5 {
     -moz-column-gap: 0.875rem;
          column-gap: 0.875rem;
-  }
-
-  .lg\:self-start {
-    align-self: flex-start;
   }
 
   .lg\:rounded-b-3xl {
@@ -1102,20 +922,12 @@ video {
             padding-inline-start: 3rem;
   }
 
-  .lg\:pt-14 {
-    padding-top: 3.5rem;
-  }
-
   .lg\:pt-5 {
     padding-top: 1.25rem;
   }
 
   .lg\:pt-60lg {
     padding-top: 3.75rem;
-  }
-
-  .lg\:pt-60 {
-    padding-top: 15rem;
   }
 
   .lg\:text-5xl {

@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         strongCyan: 'hsl(172, 67%, 45%)',
+        veryLightStrongCyan: 'hsl(173, 61%, 77%)',
         veryDarkCyan: 'hsl(183, 100%, 15%)',
         darkGrayishCyan: 'hsl(186, 14%, 43%)',
         grayishCyan: 'hsl(184, 14%, 56%)',
@@ -32,6 +33,9 @@ module.exports = {
       },
       margin: {
         '46': '2.875rem',
+      },
+      gridTemplateRows: {
+        'auto1': 'repeat(2, auto) 1fr',
       }
     },
   },
