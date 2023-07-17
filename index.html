@@ -6,31 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="assets/css/base/tailwind.css">
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body class="grid bg-lightGrayishCyan text-gray-950 font-space font-bold h-full w-full">
-    <header class="justify-self-center self-center mt-12 mb-10">
+    <header class="justify-self-center self-center mt-12 lg:mt-40 mb-10 lg:mb-88">
         <img src="assets/img/logo.svg" alt="Tip Calculator APP logo">
     </header>
 
-    <main class="grid lg:grid-cols-2 lg:gap-x-12 justify-self-center bg-white px-6 lg:ps-12 lg:pe-8 lg:py-8 rounded-t-3xl lg:rounded-b-3xl max-w-[476px] lg:max-w-[920px] w-full">
-        <section class="flex flex-col pt-9 lg:pt-5">
-            <label for="" class="text-base text-darkGrayishCyan mb-3">Bill</label>
-            <input type="text" id="" class="outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan rounded-lg text-right placeholder:text-right h-12 px-4 mb-10 lg:mb-46" placeholder="142.55">
+    <main class="grid lg:grid-cols-custom-1 lg:gap-x-12 justify-self-center bg-white shadow-xl px-6 pb-8 lg:ps-12 lg:pe-8 lg:py-8 md:mb-12 lg:mb-60 rounded-t-3xl md:rounded-b-3xl md:max-w-[450px] lg:max-w-[920px] lg:w-full">
+        <section class="flex flex-col pt-9 lg:pt-5 ">
+
+            <div class="grid grid-cols-custom-2 items-center">
+                <label for="" class="text-base text-darkGrayishCyan mb-3">Bill</label>
+                <span class="max-[374px]:text-xs justify-self-end text-base text-red  mb-3">Can't be zero</span>
+                <input type="text" id="" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" placeholder="142.55">
+            </div>
 
             <h2 class="text-base text-darkGrayishCyan mb-4">Select Tip %</h2>
 
             <div class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">5%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">10%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">15%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">25%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full">50%</button>
-                <button class="bg-veryLightGrayishCyan hover:bg-strongCyan text-2xl text-darkGrayishCyan rounded hover:text-veryDarkCyan h-12 w-full">Custom</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">5%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">10%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">15%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">25%</button>
+                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">50%</button>
+                <input type="text" class="outline-none bg-veryLightGrayishCyan text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-3 duration-75" placeholder="Custom">
             </div>
 
-            <label for="" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
-            <input type="text" id="" class="outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan rounded-lg text-right placeholder:text-right h-12 px-4 mb-10 lg:mb-4" placeholder="5">
+            <div class="grid grid-cols-custom-2 items-center">
+                <label for="" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
+                <span class="max-[374px]:text-xs justify-self-end text-base text-red mb-2">Can't be zero</span>
+                <input type="text" id="" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" placeholder="5" minlength="1" required>
+            </div>
         </section>
 
         <section class="lg:grid lg:grid-rows-auto1 bg-veryDarkCyan rounded-2xl px-6 pb-6 pt-11 lg:px-10 lg:pt-60lg lg:pb-10">
@@ -46,7 +54,7 @@
                 <h3 class="col-start-2 row-start-1 row-end-3 justify-self-end text-32 lg:text-5xl text-strongCyan">$32.79</h3>
             </div>
 
-            <button class="bg-strongCyan hover:bg-veryLightStrongCyan text-xl text-veryDarkCyan uppercase rounded h-12 w-full justify-self-end self-end">Reset</button>
+            <button type="submit" class="bg-strongCyan hover:bg-veryLightStrongCyan text-xl text-veryDarkCyan uppercase rounded h-12 w-full justify-self-end self-end duration-200">Reset</button>
         </section>
     </main>
 
@@ -61,7 +69,8 @@
 <!-- 
     - Botar Hover no botão `reset`***
     - Alinhar `Tip mount e /person` com o valor**
-    - Conferir largura do Botão e dos inputs
-    - Centralizar Projeto
+    - Conferir largura do Botão e dos inputs / Diminuir lado da calculadora e aumentar lado  dos valores com grid.**
+    - Centralizar Projeto / Aplicar margin tanto na logo, quanto no container main**
 
+    - Ajustar versão Tablet e versão para telas de 320px de largura**
 -->

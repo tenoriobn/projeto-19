@@ -19,6 +19,7 @@ module.exports = {
         lightGrayishCyan: 'hsl(185, 41%, 84%)',
         veryLightGrayishCyan: 'hsl(189, 41%, 97%)',
         white: 'hsl(0, 0%, 100%)',
+        red: 'hsl(13, 29%, 57%)',
       },
       fontFamily: {
         space: ['Space Mono', 'monospace'],
@@ -33,10 +34,15 @@ module.exports = {
       },
       margin: {
         '46': '2.875rem',
+        '88': '5.5rem'
       },
       gridTemplateRows: {
         'auto1': 'repeat(2, auto) 1fr',
-      }
+      },
+      gridTemplateColumns: {
+        'custom-1': 'minmax(0, 380px) 1fr',
+        'custom-2': 'auto, 1fr'
+      },
     },
   },
   plugins: [],
