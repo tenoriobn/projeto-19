@@ -15,31 +15,31 @@
     </header>
 
     <main class="grid lg:grid-cols-custom-1 lg:gap-x-12 justify-self-center bg-white shadow-xl px-6 pb-8 lg:ps-12 lg:pe-8 lg:py-8 md:mb-12 lg:mb-60 rounded-t-3xl md:rounded-b-3xl md:max-w-[450px] lg:max-w-[920px] lg:w-full">
-        <section class="flex flex-col pt-9 lg:pt-5 ">
 
+        <form id="form" class="flex flex-col pt-9 lg:pt-5 ">
             <div class="grid grid-cols-custom-2 items-center">
-                <label for="" class="text-base text-darkGrayishCyan mb-3">Bill</label>
-                <span class="max-[374px]:text-xs justify-self-end text-base text-red  mb-3">Can't be zero</span>
-                <input type="text" id="" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" placeholder="142.55">
+                <label for="bill" class="text-base text-darkGrayishCyan mb-3">Bill</label>
+                <span class="max-[374px]:text-xs justify-self-end text-base text-red mb-3 hidden">Can't be zero</span>
+                <input type="text" id="bill" value="142.55" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" placeholder="142.55" required>
             </div>
 
             <h2 class="text-base text-darkGrayishCyan mb-4">Select Tip %</h2>
 
-            <div class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">5%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">10%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">15%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">25%</button>
-                <button class="bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan h-12 w-full duration-200">50%</button>
-                <input type="text" class="outline-none bg-veryLightGrayishCyan text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-3 duration-75" placeholder="Custom">
+            <div id="tip" class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
+                <option class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="5">5%</option>
+                <option class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="10">10%</option>
+                <option class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="15">15%</option>
+                <option class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="25">25%</option>
+                <option class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="50">50%</option>
+                <input id="customTip" type="text" class="outline-none bg-veryLightGrayishCyan text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-3 duration-75" placeholder="Custom">
             </div>
 
             <div class="grid grid-cols-custom-2 items-center">
-                <label for="" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
-                <span class="max-[374px]:text-xs justify-self-end text-base text-red mb-2">Can't be zero</span>
-                <input type="text" id="" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" placeholder="5" minlength="1" required>
+                <label for="numberOfPeople" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
+                <span class="max-[374px]:text-xs justify-self-end text-base text-red mb-2 hidden">Can't be zero</span>
+                <input type="text" id="numberOfPeople" value="5" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" placeholder="5" minlength="1" required>
             </div>
-        </section>
+        </form>
 
         <section class="lg:grid lg:grid-rows-auto1 bg-veryDarkCyan rounded-2xl px-6 pb-6 pt-11 lg:px-10 lg:pt-60lg lg:pb-10">
             <div class="grid grid-cols-2 items-center mb-8 lg:mb-14">
