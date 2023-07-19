@@ -36,10 +36,23 @@ customTip.addEventListener('change', () => {
 
 billInput.addEventListener('input', () => {
     calculation();
+
+    if (billInput.value) {
+        billInput.classList.remove("border-red", "border-2");
+        errorMessageBill.classList.add("hidden");
+    }
+
+    updateErrorMessage();
 });
 
 numberOfPeopleInput.addEventListener('input', () => {
     calculation();
+
+    if (numberOfPeopleInput.value) {
+        numberOfPeopleInput.classList.remove("border-red", "border-2");
+        errorMessagePeople.classList.add("hidden");
+    }
+
     updateErrorMessage();
 });
 
@@ -54,7 +67,7 @@ function calculation() {
             tipPercentage = 0;
         }
 
-        const tipAmountPerPerson = (bill * tipPercentage) / 100 / numberOfPeople;
+        const tipAmountPerPerson = (bill * tipPercentage - 1) / 100 / numberOfPeople;
         const totalPerPerson = (bill + (bill * tipPercentage) / 100) / numberOfPeople;
 
         tipAmount.innerHTML = '$' + tipAmountPerPerson.toFixed(2);
@@ -66,16 +79,20 @@ function calculation() {
 }
 
 function updateErrorMessage() {
-    if (!numberOfPeopleInput.value || !billInput.value) {
-        billInput.classList.add("border-red", "border-2");
-        errorMessageBill.classList.remove("hidden");
+    if (!numberOfPeopleInput.value) {
         numberOfPeopleInput.classList.add("border-red", "border-2");
         errorMessagePeople.classList.remove("hidden");
     } else {
-        billInput.classList.remove("border-red", "border-2");
-        errorMessageBill.classList.add("hidden");
         numberOfPeopleInput.classList.remove("border-red", "border-2");
         errorMessagePeople.classList.add("hidden");
+    }
+
+    if (!billInput.value) {
+        billInput.classList.add("border-red", "border-2");
+        errorMessageBill.classList.remove("hidden");
+    } else {
+        billInput.classList.remove("border-red", "border-2");
+        errorMessageBill.classList.add("hidden");
     }
 }
 

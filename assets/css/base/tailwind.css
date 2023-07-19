@@ -600,10 +600,6 @@ video {
   margin-top: 3rem;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -721,11 +717,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-}
-
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(13 29% 57% / var(--tw-bg-opacity));
 }
 
 .bg-iconDollar {
