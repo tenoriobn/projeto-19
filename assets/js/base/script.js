@@ -1,7 +1,7 @@
 import updateErrorMessage from "./updateErrorMessage.js";
 import calculation from "./calculation.js";
 
-const tipOptions = document.querySelectorAll('#tip');
+const tipOptions = document.querySelectorAll('#tip-container button');
 const tipAmount = document.getElementById("tipAmount");
 const total = document.getElementById("total");
 const billInput = document.getElementById("bill");
@@ -22,7 +22,8 @@ buttonReset.addEventListener("click", () => {
 })
 
 tipOptions.forEach(option => {
-    option.addEventListener('click', () => {
+    option.addEventListener('click', (event) => {
+        event.preventDefault();
         currentTipValue = parseFloat(option.value);
         calculation(billInput, numberOfPeopleInput, currentTipValue, tipAmount, total);
         updateErrorMessage(numberOfPeopleInput, billInput, errorMessagePeople, errorMessageBill)
