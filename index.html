@@ -14,30 +14,30 @@
         <img src="assets/img/logo.svg" alt="Tip Calculator APP logo">
     </header>
 
-    <main class="grid lg:grid-cols-custom-1 lg:gap-x-12 justify-self-center bg-white shadow-xl px-6 pb-8 lg:ps-12 lg:pe-8 lg:py-8 md:mb-12 lg:mb-60 rounded-t-3xl md:rounded-b-3xl md:max-w-[450px] lg:max-w-[920px] lg:w-full">
+    <main class="grid lg:grid-cols-custom-1 lg:gap-x-12 justify-self-center bg-white shadow-xl px-6 pb-8 lg:ps-12 lg:pe-8 lg:py-8 md:mb-12 lg:mb-60 rounded-t-3xl md:rounded-b-3xl md:max-w-450 lg:max-w-920 lg:w-full">
 
-        <form id="form" class="flex flex-col pt-9 lg:pt-5 ">
+        <form id="form" class="flex flex-col pt-9 lg:pt-4">
             <div class="grid grid-cols-custom-2 items-center">
                 <label for="bill" class="text-base text-darkGrayishCyan mb-3">Bill</label>
-                <span id="error-message-bill" class="max-[374px]:text-xs justify-self-end text-base text-red mb-3 hidden">Can't be zero</span>
-                <input type="text" id="bill" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" value="142.55" placeholder="0" required>
+                <span id="error-message-bill" class="max-374:text-xs justify-self-end text-base text-red mb-3 hidden" aria-live="assertive">Can't be zero</span>
+                <input type="text" id="bill" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" aria-describedby="error-message-bill" value="142.55" placeholder="0" required>
             </div>
 
             <h2 class="text-base text-darkGrayishCyan mb-4">Select Tip %</h2>
 
-            <div class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
-                <option id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="5">5%</option>
-                <option id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="10">10%</option>
-                <option id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="15">15%</option>
-                <option id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="25">25%</option>
-                <option id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="50">50%</option>
+            <ul class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
+                <li id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="5">5%</li>
+                <li id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="10">10%</li>
+                <li id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="15">15%</li>
+                <li id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="25">25%</li>
+                <li id="tip" class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="50">50%</li>
                 <input id="customTip" type="text" class="outline-none bg-veryLightGrayishCyan text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-3 duration-75" placeholder="Custom">
-            </div>
+            </ul>
 
             <div class="grid grid-cols-custom-2 items-center">
                 <label for="numberOfPeople" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
-                <span id="error-message-people" class="max-[374px]:text-xs justify-self-end text-base text-red mb-2 hidden">Can't be zero</span>
-                <input type="text" id="numberOfPeople" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" value="5" placeholder="0" minlength="1" required>
+                <span id="error-message-people" class="max-374:text-xs justify-self-end text-base text-red mb-2 hidden" aria-live="assertive">Can't be zero</span>
+                <input type="text" id="numberOfPeople" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" aria-describedby="error-message-people" value="5" placeholder="0" minlength="1" required>
             </div>
         </form>
 
@@ -56,21 +56,7 @@
 
             <button type="submit" id="button-reset" class="bg-strongCyan hover:bg-veryLightStrongCyan text-xl text-veryDarkCyan uppercase rounded h-12 w-full justify-self-end self-end duration-200">Reset</button>
         </section>
-    </main>
-
-    <footer class="">
-
-    </footer>
-    
+    </main>    
     <script type="module" src="assets/js/base/script.js"></script>
 </body>
 </html>
-
-<!-- 
-    - Botar Hover no botão `reset`***
-    - Alinhar `Tip mount e /person` com o valor**
-    - Conferir largura do Botão e dos inputs / Diminuir lado da calculadora e aumentar lado  dos valores com grid.**
-    - Centralizar Projeto / Aplicar margin tanto na logo, quanto no container main**
-
-    - Ajustar versão Tablet e versão para telas de 320px de largura**
--->

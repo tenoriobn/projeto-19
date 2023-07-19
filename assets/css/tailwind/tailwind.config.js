@@ -43,6 +43,13 @@ module.exports = {
         'custom-1': 'minmax(0, 380px) 1fr',
         'custom-2': 'auto, 1fr'
       },
+      maxWidth: {
+        '450': '450px',
+        '920': '920px',
+      },
+      screens: {
+        '374': '374px',
+      },
     },
   },
   plugins: [],
