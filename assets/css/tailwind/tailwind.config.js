@@ -14,6 +14,7 @@ module.exports = {
         strongCyan: 'hsl(172, 67%, 45%)',
         veryLightStrongCyan: 'hsl(173, 61%, 77%)',
         veryDarkCyan: 'hsl(183, 100%, 15%)',
+        veryDarkGraishCyan: 'hsl(183, 79%, 24%)',
         darkGrayishCyan: 'hsl(186, 14%, 43%)',
         grayishCyan: 'hsl(184, 14%, 56%)',
         lightGrayishCyan: 'hsl(185, 41%, 84%)',
