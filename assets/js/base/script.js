@@ -58,7 +58,3 @@ numberOfPeopleInput.addEventListener('input', () => {
 
     updateErrorMessage(numberOfPeopleInput, billInput, errorMessagePeople, errorMessageBill)
 });
-
-window.addEventListener('load', () => {
-    calculation(billInput, numberOfPeopleInput, currentTipValue, tipAmount, total);
-});

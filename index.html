@@ -18,14 +18,14 @@
 
         <form id="form" class="flex flex-col pt-9 lg:pt-4">
             <div class="grid grid-cols-custom-2 items-center">
-                <label for="bill" class="text-base text-darkGrayishCyan mb-3">Bill</label>
+                <label for="bill" class="text-base text-darkGrayishCyan mb-2">Bill</label>
                 <span id="error-message-bill" class="max-374:text-xs justify-self-end text-base text-red mb-3 hidden" aria-live="assertive">Can't be zero</span>
-                <input type="text" id="bill" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-46 duration-75" aria-describedby="error-message-bill" value="142.55" placeholder="0" required>
+                <input type="text" id="bill" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconDollar bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-36 duration-75" aria-describedby="error-message-bill" placeholder="0" required>
             </div>
 
             <h2 class="text-base text-darkGrayishCyan mb-4">Select Tip %</h2>
 
-            <div id="tip-container" class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-46">
+            <div id="tip-container" class="grid gap-4 lg:gap-x-3.5 grid-cols-2 md:grid-cols-3 mb-10 lg:mb-36">
                 <button class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="5">5%</button>
                 <button class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="10">10%</button>
                 <button class="flex items-center justify-center bg-veryDarkCyan hover:bg-strongCyan text-2xl text-white rounded hover:text-veryDarkCyan cursor-pointer h-12 w-full duration-200" value="15">15%</button>
@@ -37,13 +37,13 @@
             <div class="grid grid-cols-custom-2 items-center">
                 <label for="numberOfPeople" class="text-base text-darkGrayishCyan mb-2">Number of People</label>
                 <span id="error-message-people" class="max-374:text-xs justify-self-end text-base text-red mb-2 hidden" aria-live="assertive">Can't be zero</span>
-                <input type="text" id="numberOfPeople" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" aria-describedby="error-message-people" value="5" placeholder="0" minlength="1" required>
+                <input type="text" id="numberOfPeople" class="col-start-1 col-end-3 outline-none bg-veryLightGrayishCyan bg-iconPerson bg-no-repeat bg-left-16 text-2xl text-veryDarkCyan placeholder:text-grayishCyan focus:border-2 focus:border-solid focus:border-strongCyan focus:caret-strongCyan rounded-lg text-right placeholder:text-right cursor-pointer h-12 px-4 mb-10 lg:mb-4 duration-75" aria-describedby="error-message-people" placeholder="0" minlength="1" required>
             </div>
         </form>
 
         <section class="lg:grid lg:grid-rows-auto1 bg-veryDarkCyan rounded-2xl px-6 pb-6 pt-11 lg:px-10 lg:pt-60lg lg:pb-10">
             <div class="grid grid-cols-2 items-center mb-8 lg:mb-14">
-                <h2 class="col-start-1 text-base text-white">Tip amount</h2>
+                <h2 class="col-start-1 text-base text-white">Tip Amount</h2>
                 <p class="col-start-1  text-sm text-darkGrayishCyan">/ person</p>
                 <h3 id="tipAmount" class="col-start-2 row-start-1 row-end-3 justify-self-end text-32 lg:text-5xl text-strongCyan">$0.00</h3>
             </div>
